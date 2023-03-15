@@ -15,6 +15,8 @@ import FAQ from "./components/FAQ.js";
 import ContactForm from "./components/ContactForm.js";
 import Footer from "./components/constants/Footer";  
 
+import Services from "pages/Services";
+
 export default function App() {
 
   return (
@@ -35,6 +37,7 @@ export default function App() {
               <Footer />
             </AnimationRevealPage>
           } />
+          <Route path="/services" element={<Services />} />
         </Routes>
       </Router>
     </>
