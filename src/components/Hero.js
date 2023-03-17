@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState } from "react";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import styled from "styled-components";
@@ -11,6 +11,7 @@ import { Container, ContentWithVerticalPadding } from "./misc/Layouts";
 // Assets
 import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-circle.svg";
 import DeveloperGraphic from "../assets/developer-mode-1400-right.svg"
+import DesignerGraphic from "../assets/designer-mode-1400-left.svg"
 
 // NavBar styling
 const Header = tw(HeaderBase)`pt-8 pl-8 max-w-none`;
@@ -47,6 +48,12 @@ export default ({
   features = ["Personalized, responsive web design", "Social Media strategy & content", "Full Branding Services (logo, color, typography, etc.)"],
 
 }) => {
+
+  const [showBackground1, setShowBackground1] = useState(true);
+
+  const handleToggleBackground = () => {
+    setShowBackground1(!showBackground1);
+  };
 
   return (
     <>
