@@ -14,6 +14,7 @@ import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ.js";
 import ContactForm from "./components/ContactForm.js";
 import Footer from "./components/constants/Footer";  
+import ThankYouPage from "pages/ThankYouPage";
 
 export default function App() {
 
@@ -35,6 +36,7 @@ export default function App() {
               <Footer />
             </AnimationRevealPage>
           } />
+          <Route path="/pages/success" element={<ThankYouPage />} />
         </Routes>
       </Router>
     </>

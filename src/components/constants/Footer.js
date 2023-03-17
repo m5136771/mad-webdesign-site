@@ -34,6 +34,7 @@ export default () => {
           </LinksContainer>
           <CopyrightText>
             &copy; Copyright 2023, MAD Web Design, All Rights Reserved. *Definition of "mad" from <a href="http://mad.urbanup.com/1005004 ">Urban Dictionary</a>.
+            Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a>
           </CopyrightText>
         </Row>
       </Content>
