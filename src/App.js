@@ -15,6 +15,7 @@ import FAQ from "./components/FAQ.js";
 import ContactForm from "./components/ContactForm.js";
 import Footer from "./components/constants/Footer";  
 import ThankYouPage from "pages/ThankYouPage";
+import PrivacyPolicy from "pages/PrivacyPolicy";
 
 export default function App() {
 
@@ -37,6 +38,7 @@ export default function App() {
             </AnimationRevealPage>
           } />
           <Route path="/pages/success" element={<ThankYouPage />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>
       </Router>
     </>
