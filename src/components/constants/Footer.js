@@ -33,7 +33,7 @@ export default () => {
             <Link href="#contact">Contact</Link>
           </LinksContainer>
           <CopyrightText>
-            &copy; Copyright 2023, MAD Web Design, All Rights Reserved. *Definition of "mad" from <a href="http://mad.urbanup.com/1005004 ">Urban Dictionary</a>.
+            &copy; Copyright 2023, MAD Web Design, All Rights Reserved. <a href="/privacy">See Privacy Policy</a>. Base React components from <a href="https://treact.owaiskhan.me/">Treact</a>. *Definition of "mad" from <a href="http://mad.urbanup.com/1005004 ">Urban Dictionary</a>.
             Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a>
           </CopyrightText>
         </Row>

@@ -10,11 +10,13 @@ import Hero from "./components/Hero";
 import Process from "./components/Process.js";
 import Pricing from "./components/Pricing.js";
 import Portfolio from "./components/Portfolio.js";
-import Testimonials from "./components/Testimonials";
+import Designs from "components/Designs";
+/* import Testimonials from "./components/Testimonials"; */
 import FAQ from "./components/FAQ.js";
 import ContactForm from "./components/ContactForm.js";
 import Footer from "./components/constants/Footer";  
 import ThankYouPage from "pages/ThankYouPage";
+import PrivacyPolicy from "pages/PrivacyPolicy";
 
 export default function App() {
 
@@ -30,13 +32,15 @@ export default function App() {
               <Process />
               <Pricing />
               <Portfolio />
-              <Testimonials />
+              <Designs />
+              {/* <Testimonials /> */}
               <FAQ />
               <ContactForm />
               <Footer />
             </AnimationRevealPage>
           } />
           <Route path="/pages/success" element={<ThankYouPage />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>
       </Router>
     </>
