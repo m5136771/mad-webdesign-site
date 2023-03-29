@@ -10,13 +10,13 @@ import ForestryLogo1 from "assets/forestry-logo-1.jpg";
 import ForestryLogo2 from "assets/forestry-logo-2.jpg";
 import ForestryLogo3 from "assets/forestry-logo-3.jpg";
 
-import HomeLogo1 from "assets/home-logo-1.png";
+import HomeLogo1 from "assets/home-logo-1.jpg";
 import HomeLogo2 from "assets/home-logo-2.jpg";
 import HomeLogo3 from "assets/home-logo-3.jpg";
 
-import WaterColor1 from "assets/watercolor-1.png";
-import WaterColor2 from "assets/watercolor-2.png";
-import WaterColor3 from "assets/watercolor-3.png";
+import WaterColor1 from "assets/watercolor-1.jpg";
+import WaterColor2 from "assets/watercolor-2.jpg";
+import WaterColor3 from "assets/watercolor-3.jpg";
 
 
 const HeadingContainer = tw.div``

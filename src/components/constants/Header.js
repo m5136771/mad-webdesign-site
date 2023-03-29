@@ -54,20 +54,19 @@ export const DesktopNavLinks = tw.nav`
 `;
 
 export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg" }) => {
+  const { showNavLinks, animation, toggleNavbar } = useAnimatedNavToggler();
+  const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
 
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#process">Process</NavLink>
-      <NavLink href="/#options">Options</NavLink>
-      <NavLink href="/#portfolio">Portfolio</NavLink>
-      <NavLink href="/#testimonials">Testimonials</NavLink>
-      <NavLink href="/#faq">FAQ</NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#contact">Start</PrimaryLink>
+      <NavLink href="/#process" onClick={toggleNavbar}>Process</NavLink>
+      <NavLink href="/#options" onClick={toggleNavbar}>Options</NavLink>
+      <NavLink href="/#portfolio" onClick={toggleNavbar}>Portfolio</NavLink>
+      <NavLink href="/#testimonials" onClick={toggleNavbar}>Testimonials</NavLink>
+      <NavLink href="/#faq" onClick={toggleNavbar}>FAQ</NavLink>
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#contact" onClick={toggleNavbar}>Start</PrimaryLink>
     </NavLinks>
   ];
-
-  const { showNavLinks, animation, toggleNavbar } = useAnimatedNavToggler();
-  const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
 
   const defaultLogoLink = (
     <LogoLink href="/">

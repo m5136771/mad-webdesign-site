@@ -1,7 +1,8 @@
 import React from "react";
 import tw from "twin.macro";
-import {Container as ContainerBase } from "../misc/Layouts"
+import { Container as ContainerBase } from "../misc/Layouts"
 import logo from "../../assets/logo-sig_rain.svg";
+import styled from "styled-components";
 
 
 const Container = tw(ContainerBase)`bg-go text-holiness -mx-8 -mb-8`
@@ -10,7 +11,12 @@ const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 const Row = tw.div`flex items-center justify-center flex-col px-8`
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
-const LogoImg = tw.img`w-56 opacity-75 hocus:opacity-100 hocus:cursor-pointer`;
+export const NavLink = tw.a``;
+export const LogoLink = styled(NavLink)`
+img {
+    ${tw`w-56 opacity-75 hocus:opacity-100 hocus:cursor-pointer`}
+  }
+`;
 
 const LinksContainer = tw.div`mt-8 font-medium flex flex-wrap justify-center items-center flex-col sm:flex-row`
 const Link = tw.a`border-b-2 border-transparent hocus:text-go-light hocus:border-go-light pb-1 transition duration-300 mt-2 mx-4`;
@@ -22,7 +28,9 @@ export default () => {
       <Content>
         <Row>
           <LogoContainer>
-            <LogoImg src={logo} />
+            <LogoLink href="/">
+              <img src={logo} alt="logo for MAD Web Design - signature spelling M.A.D." />
+            </LogoLink>
           </LogoContainer>
           <LinksContainer>
             <Link href="#process">Process</Link>
