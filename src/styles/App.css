@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* For rgb(255 115 179 / <alpha-value>) */
+    /* --color-primary: 255 115 179; */
+
+    /* For hsl(198deg 93% 60% / <alpha-value>) */
+    --color-ray: 0deg 0% 100%;
+	--color-sun: 47deg 91% 58%;
+	--color-moon: 212deg 13% 82%;
+	--color-crater: 221deg 16% 68%;
+
+    /* For rgba(255, 115, 179, <alpha-value>) */
+    /* --color-primary: 255, 115, 179; */
+  }
+}

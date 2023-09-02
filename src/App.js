@@ -1,6 +1,7 @@
 import React from "react";
 import GlobalStyles from './styles/GlobalStyles';
 import { css } from "styled-components/macro"; //eslint-disable-line
+import "./styles/App.css";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';  
 

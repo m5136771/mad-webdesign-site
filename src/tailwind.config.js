@@ -11,6 +11,14 @@ module.exports = {
       xl: '1280px',
       "2xl": "1440px",
     },
+    aspectRatio: {
+      none: 0,
+      square: [1, 1],
+      "8/3": [8, 3],
+      "16/9": [16, 9],
+      "4/3": [4, 3],
+      "21/9": [21, 9],
+    },
     colors: {
       dark: {
         100: '#121212',
@@ -21,6 +29,14 @@ module.exports = {
 
       black: '#000',
       white: '#fff',
+
+      ray: 'hsl(var(--color-ray) / <alpha-value>)',
+      sun: 'hsl(var(--color-sun) / <alpha-value>)',
+      moon: 'hsl(var(--color-moon) / <alpha-value>)',
+      crater: 'hsl(var(--color-crater) / <alpha-value>)',
+      sky: '#3885b7',
+      night: '#1f2233',
+
 
       holiness: {
         DEFAULT: '#E6E6E6',
